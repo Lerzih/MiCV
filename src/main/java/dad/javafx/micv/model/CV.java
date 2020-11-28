@@ -22,6 +22,20 @@ public class CV {
 	public final void setPersonal(final Personal personal) {
 		this.personalProperty().set(personal);
 	}
+	
+	private ObjectProperty<Contacto> contacto = new SimpleObjectProperty<Contacto>(new Contacto());
+
+	public final ObjectProperty<Contacto> contactoProperty() {
+		return this.contacto;
+	}
+
+	public final Contacto getContacto() {
+		return this.contactoProperty().get();
+	}
+
+	public final void setContacto(final Contacto contacto) {
+		this.contactoProperty().set(contacto);
+	}
 
 	public static void main(String[] args) {
 		
