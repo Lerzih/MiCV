@@ -31,6 +31,7 @@ public class MainController implements Initializable {
 	// controllers
 	
 	private PersonalController personalController = new PersonalController();
+	private ContactoController contactoController = new ContactoController();
 	
 	// model
 	
