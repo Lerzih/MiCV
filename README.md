@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JavaFX Project Template
 
 Proyecto base en Eclipse para Maven con soporte para JavaFX 11.
@@ -24,3 +25,6 @@ rmdir /s /q .git
 ```
 
 3. Importar el proyecto en Eclipse y empezar a trabajar.
+=======
+# MiCV
+>>>>>>> 5a7c54a15a5744cddd8503d22ac4efeb5c779c52
