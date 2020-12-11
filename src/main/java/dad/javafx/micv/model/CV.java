@@ -8,6 +8,8 @@ import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
 public class CV {
+	
+	// ----- Personal -----
 
 	private ObjectProperty<Personal> personal = new SimpleObjectProperty<Personal>(new Personal());
 
@@ -23,6 +25,8 @@ public class CV {
 		this.personalProperty().set(personal);
 	}
 	
+	// ----- Contacto -----
+	
 	private ObjectProperty<Contacto> contacto = new SimpleObjectProperty<Contacto>(new Contacto());
 
 	public final ObjectProperty<Contacto> contactoProperty() {
@@ -36,25 +40,21 @@ public class CV {
 	public final void setContacto(final Contacto contacto) {
 		this.contactoProperty().set(contacto);
 	}
+	
+	// ----- Formacion -----
+	
+	private ObjectProperty<Formacion> formacion = new SimpleObjectProperty<>();
+	
+	public final ObjectProperty<Formacion> formacionProperty() {
+		return this.formacion;
+	}
 
-	public static void main(String[] args) {
-		
-		CV cv = new CV();
-		cv.getPersonal().setNombre("Chuck");
-		cv.getPersonal().setApellidos("Norris");
-		cv.getPersonal().getNacionalidades().add(new Nacionalidad("estadounidense"));
-		
-		Gson gson = 
-			FxGson.fullBuilder()
-                .setPrettyPrinting()
-                .create();
-		
-		String json = gson.toJson(cv); // convertir modelo de datos a json (marshalling)
+	public final Formacion getFormacion() {
+		return this.formacionProperty().get();
+	}
 
-		System.out.println(json);
-		
-		cv = gson.fromJson(json, CV.class); // convertir json a modelo de datos (unmarshalling) 
-		
+	public final void setFormacion(final Formacion formacion) {
+		this.formacionProperty().set(formacion);
 	}
 	
 }

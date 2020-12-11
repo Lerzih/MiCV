@@ -27,4 +27,13 @@ public class Nacionalidad {
 		this.denominacionProperty().set(denominacion);
 	}
 
+	@Override
+	public boolean equals(Object nacionalidad) {
+		if(!(nacionalidad instanceof Nacionalidad ))return false;
+		Nacionalidad aux = (Nacionalidad) nacionalidad;
+		return this.getDenominacion().equals(aux.getDenominacion());
+	}
+	
+	
+
 }

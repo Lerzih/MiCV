@@ -22,6 +22,8 @@ public class Personal {
 	private StringProperty localidad = new SimpleStringProperty();
 	private StringProperty pais = new SimpleStringProperty();
 	private ListProperty<Nacionalidad> nacionalidades = new SimpleListProperty<Nacionalidad>(FXCollections.observableArrayList());
+	
+	// ----- Identificacion -----
 
 	public final StringProperty identificacionProperty() {
 		return this.identificacion;
@@ -34,6 +36,8 @@ public class Personal {
 	public final void setIdentificacion(final String identificacion) {
 		this.identificacionProperty().set(identificacion);
 	}
+	
+	// ----- Nombre -----
 
 	public final StringProperty nombreProperty() {
 		return this.nombre;
@@ -46,6 +50,8 @@ public class Personal {
 	public final void setNombre(final String nombre) {
 		this.nombreProperty().set(nombre);
 	}
+	
+	// ----- Apellidos -----
 
 	public final StringProperty apellidosProperty() {
 		return this.apellidos;
@@ -58,6 +64,8 @@ public class Personal {
 	public final void setApellidos(final String apellidos) {
 		this.apellidosProperty().set(apellidos);
 	}
+	
+	// ----- Fecha de Nacimiento -----
 
 	public final ObjectProperty<LocalDate> fechaNacimientoProperty() {
 		return this.fechaNacimiento;
@@ -70,6 +78,8 @@ public class Personal {
 	public final void setFechaNacimiento(final LocalDate fechaNacimiento) {
 		this.fechaNacimientoProperty().set(fechaNacimiento);
 	}
+	
+	// ----- Direccion -----
 
 	public final StringProperty direccionProperty() {
 		return this.direccion;
@@ -82,6 +92,8 @@ public class Personal {
 	public final void setDireccion(final String direccion) {
 		this.direccionProperty().set(direccion);
 	}
+	
+	// ----- Codigo Postal -----
 
 	public final StringProperty codigoPostalProperty() {
 		return this.codigoPostal;
@@ -94,6 +106,8 @@ public class Personal {
 	public final void setCodigoPostal(final String codigoPostal) {
 		this.codigoPostalProperty().set(codigoPostal);
 	}
+	
+	// ----- Localidad -----
 
 	public final StringProperty localidadProperty() {
 		return this.localidad;
@@ -106,6 +120,8 @@ public class Personal {
 	public final void setLocalidad(final String localidad) {
 		this.localidadProperty().set(localidad);
 	}
+	
+	// ----- Pais -----
 
 	public final StringProperty paisProperty() {
 		return this.pais;
@@ -118,6 +134,8 @@ public class Personal {
 	public final void setPais(final String pais) {
 		this.paisProperty().set(pais);
 	}
+	
+	// ----- Nacionalidad -----
 
 	public final ListProperty<Nacionalidad> nacionalidadesProperty() {
 		return this.nacionalidades;

@@ -17,16 +17,16 @@
                <content>
                   <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
                      <children>
-                        <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                        <TableView fx:id="tblViewTelefono" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
                           <columns>
-                            <TableColumn prefWidth="75.0" text="Teléfono" />
-                            <TableColumn prefWidth="75.0" text="Tipo" />
+                            <TableColumn fx:id="colNumero" prefWidth="75.0" text="Número" />
+                            <TableColumn fx:id="colTipo" prefWidth="75.0" text="Tipo" />
                           </columns>
                         </TableView>
                         <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="NEVER">
                            <children>
-                              <Button fx:id="btnAddTelefono" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Añadir" />
-                              <Button fx:id="btnDeleteTelefono" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Eliminar" />
+                              <Button fx:id="btnAddTelefono" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAddTelefono" text="Añadir" />
+                              <Button fx:id="btnDeleteTelefono" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDeleteTelefono" text="Eliminar" />
                            </children>
                         </VBox>
                      </children>
@@ -41,15 +41,15 @@
                <content>
                   <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
                      <children>
-                        <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                        <TableView fx:id="tblViewCorreo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
                            <columns>
-                              <TableColumn prefWidth="170.0" text="Correo" />
+                              <TableColumn fx:id="colEmail" prefWidth="170.0" text="E-mail" />
                            </columns>
                         </TableView>
                         <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="NEVER">
                            <children>
-                              <Button fx:id="btnAddCorreo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Añadir" />
-                              <Button fx:id="btnDeleteCorreo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Eliminar" />
+                              <Button fx:id="btnAddCorreo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAddCorreo" text="Añadir" />
+                              <Button fx:id="btnDeleteCorreo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDeleteCorreo" text="Eliminar" />
                            </children>
                         </VBox>
                      </children>
@@ -63,15 +63,15 @@
                <content>
                   <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
                      <children>
-                        <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
+                        <TableView fx:id="tblViewWeb" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS">
                            <columns>
-                              <TableColumn prefWidth="170.0" text="Url" />
+                              <TableColumn fx:id="colUrl" prefWidth="170.0" text="Url" />
                            </columns>
                         </TableView>
                         <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="NEVER">
                            <children>
-                              <Button fx:id="btnAddWeb" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Añadir" />
-                              <Button fx:id="btnDeleteWeb" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Eliminar" />
+                              <Button fx:id="btnAddWeb" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAddWeb" text="Añadir" />
+                              <Button fx:id="btnDeleteWeb" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDeleteWeb" text="Eliminar" />
                            </children>
                         </VBox>
                      </children>
